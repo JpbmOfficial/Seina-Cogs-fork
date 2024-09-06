@@ -409,14 +409,6 @@ class Animals(commands.Cog):
         await self._animal(ctx, ctx.command.name)
 
     @commands.bot_has_permissions(embed_links=True)
-    @commands.command(name="snake")
-    async def _snake(self, ctx: commands.Context):
-        """
-        Random snakes!
-        """
-        await self._animal(ctx, ctx.command.name)
-
-    @commands.bot_has_permissions(embed_links=True)
     @commands.command(name="spider")
     async def _spider(self, ctx: commands.Context):
         """
